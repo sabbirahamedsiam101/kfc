@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Poppins:ital,wght@0,300;0,400;0,600;0,800;1,300;1,600;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient( 90deg , #f94626 , #f02328);
+    overflow: hidden;
+    z-index: 2;
+}
+header nav{
+    width: 63%;
+    height: 13%;
+   
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    width: 110px;
+    height: 40px;
+}
+
+header nav .ul_user{
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav ul li{
+    list-style-type: none;
+    padding: 5px 0px 5px 25px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+header nav .user{
+    display: flex;
+    align-items: center;
+}
+header nav .user li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+header nav .user li a{
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+header nav .user li a:hover{
+    color: #ffe91e;
+}
+header nav .user li a img{
+    width: 30px ;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 3px 4px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0 , .5);
+    transition: all 1s ease-in-out;
+
+}
+header nav .user li a:hover img{
+    background-color: #e49393;
+}
+header section{
+    width: 63%;
+    height: 87%;
+    margin: auto;
+    display: flex;
+    row-gap: 25px;
+}
+header section  .left-content-side , .right-food-side {
+    width: 50%;
+    height: 100%;
+   
+    color: #fff;
+    font-weight: 900;
+}
+header section  .left-content-side h1{
+    font-size: 55px;
+    line-height: 60px;
+    margin-top: 90px;
+}
+header section  .left-content-side  p{
+   font-size: 14px;
+   margin: 20px 0; 
+    color: #fff;
+    font-weight: 400;
+}
+
+header section  .left-content-side  button{
+    padding: 8px 25px;
+    border-radius: 25px;
+    background: transparent;
+    border: 2px dashed #fff;
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: 0px 5px 13px rgb(0, 0, 0 , .4);
+}
+
+header section  .left-content-side .dots {
+    display: flex;
+    margin-top: 55px;
+}
+header section  .left-content-side .dots h6{
+    width: 15px;
+    height: 6px;
+    background-color: bisque;
+    margin-right: 5px;
+    border-radius: 10px;
+}
+
+header section .right-food-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header section .right-food-side img{
+    
+    height: 600px;
+    width: 750px;
+}
+header .ring1{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    background-color: none;
+    border: 20px solid   #fa5731 ; 
+    top: -55px;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+}
+header .ring2{
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    background-color: none;
+    border: 20px solid   #fa5731 ; 
+    top: 23%;
+    left: 15%;
+    z-index: -1;
+    border-radius: 50%;
+}
+header .ring3{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    background-color: none;
+    border: 29px solid   #fa5731 ; 
+    top: 23%;
+    right: -65px;
+    z-index: -1;
+    border-radius: 50%;
+}
+.main{
+    position: relative;
+    width: 65%;
+    height: 125px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.main .main-src{
+    width: 92%;
+    height: 100%;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main .main-src .card{
+    height: 100%;
+    width: 115px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .main-src .card img{
+    width: 100%;
+}
+.main .arrow-left,.arrow-right{
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    top: 40%;
+    left: -2%;
+
+}
+.main .arrow-right{
+    left: 95%;
+    transform: rotate(180deg) ;
+}
+.main h4{
+    position: absolute;
+    font-size: 17px;
+    background-color: #ffc41e;
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 3px solid  #ea5f49 ;
+    top: -20px;
+    left: 45%;
+    z-index: 3;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 12px #fc826f ;
+}
+
+.card-box{
+    width: 100%;
+    height: 500px;
+    background: #f2dff2;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-box .card-box1{
+    width: 65%;
+    height: 75%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card-box .card-box1 .card{
+    height: 170px;
+    width: 280px;
+    /* border: 1px solid black; */
+    border-radius: 10px ;
+    box-shadow: 0px 7px 12px #ffdfbd ;
+    background: #fff;
+    color: black;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+.card-box .card-box1 .card_b{
+    width: 430px;
+}
+.card-box .card-box1 .card img{
+ position: absolute;
+ width: 65%; 
+ height: 100%;
+ right: 0;
+ z-index: 1;
+}
+.card-box .card-box1 .card2{
+    background-color: #fc2e56;
+}
+.card-box .card-box1 .card3{
+    background-color: #fbfbfb;
+}
+.card-box .card-box1 .card_b img{
+    width: 55%;
+}
+.card-box .card-box1 .card .content{
+    z-index: 2;
+    padding: 15px 2px 15px 20px;
+    text-transform: uppercase;
+}
+.card-box .card-box1 .card .content h2{
+    text-transform: uppercase;
+    font-size: 22px;
+}
+.card-box .card-box1 .card .content p{
+    font-size: 12px;
+    margin: 5px 0px;
+    font-weight: 700;
+}
+.card-box .card-box1 .card3 .content h2{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.card-box .card-box1 .card2 .content{
+ color: white;
+}
+.card-box .card-box1 .card2 .content h4{
+    color: black;
+}
+.card-box .card-box1 .card2 .content p{
+    color: black;
+    font-weight: 600;
+}
+.card-box .card-box1 .card4 .content button{
+    background-color: #fc2e56 ;
+    padding: 5px 8px;
+    border-radius: 14px;
+}
+.card-box .card-box1 .card_b .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-box .card-box1 .card_b .content h2{
+    font-size: 20px;
+    line-height: 23px;
+}
+.card-box .card-box1 .card5 .content button{
+    background-color: #fc2e56 ;
+    padding: 5px 6px;
+    border-radius: 14px;
+}
+
+.app-box{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(0deg, rgb(243,210,183 ) ,(#f2dfd1));
+}
+.app-box .app-box1{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: #a8711264;
+    display: flex;
+    justify-content: center;
+}
+.app-box .app-box1 .app-img,.app-content{
+
+    position: relative;
+    width: 35%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.app-box .app-box1 .app-img img{
+    height: 120%;
+    position: relative;
+    top: -25px;
+    filter: drop-shadow(-5px 8px 5px rgb(48 ,48,48,0.4));
+}
+.app-box .app-box1  .app-content {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+}
+.app-box .app-box1  .app-content h1{
+    color: white;
+    line-height: 40px;
+    font-weight: 700;
+}
+.app-box .app-box1  .app-content img{
+    width: 135px;
+    margin-top: 20px;
+    filter: drop-shadow(-5px 8px 5px rgb(48 ,48,48,0.4));
+
+}
+.social{
+    position: relative;
+    height: 430px;
+    width: 100%;
+    background: linear-gradient(0deg  , #f2dfd1 , rgba(243,210,183));
+    z-index: -1;
+}
+
+.social .social2{
+    position: relative;
+    height: 100%;
+    width: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    
+    
+}
+.social .social2 .social-box,.social-video-box{
+    position: relative;
+    height: 70%;
+    width: 50%;
+    /* border:1px solid black ; */
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  
+
+}
+
+.social .social2 .social-box .twitter{
+    position: relative;
+    height: 80px;
+    width: 260px;
+    padding-left:50px;
+    background-color: white;
+    border-radius: 20px 10px 20px 10px;
+
+}
+
+.social .social2 .social-box .twitter img{
+    position: absolute;
+    background-color: #21b6fc;
+    width: 35px;
+    padding: 8px;
+    box-shadow: 0px 8px 8px #f0edfa , 8px 0px 8px #d0edfa;
+    border-radius: 50%;
+    left: 0;
+}
+
+.social .social2 .social-box .twitter p{
+    font-size: 13px;
+    color: black;
+
+}
+.social .social2 .social-box .twitter p span {
+    color: #21b6fc;
+    font-weight: bold;
+   
+}
+.social .social2 .social-box .fackbook{
+    position: relative;
+    height: 170px;
+    width: 160px;
+    background-color: white;
+    border-radius: 20px 10px 20px 10px;
+
+}
+.social .social2 .social-box .fackbook img{
+    position: absolute;
+    background-color: #21b6fc;
+    width: 35px;
+    padding: 8px;
+    box-shadow: 0px 8px 8px #f0edfa , 8px 0px 8px #d0edfa;
+    border-radius: 50%;
+    left: 0;
+}
+.social .social2 .social-box .fackbook  .insta{
+    background-color: #ee5353;
+}
+.social .social2 .social-box .fackbook h3{
+     padding: 8px 0px 12px 44px;
+    font-size: 16px;
+}
+.social .social2 .social-box .fackbook p{
+    font-size: 13px;
+    padding: 6px;
+    text-align: left;
+}
+
+.social .social2 .social-video-box .video{
+    position: relative;
+    width: 450px;
+    height: 265px;
+    margin-left: 30px;
+    border: 8px solid white;
+    background-color: black;
+}
+.social .social2 .social-video-box img{
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+address{
+    position: relative;
+    height: 80PX;
+    width: 100%;
+    background-color: #ee5353;
+}
+
+address .add{
+    position: relative;
+    height:100%;
+    width: 80%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+}
+address .add .kfc-add, .kfc-icon{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+address .add .kfc-add {
+
+}
+address .add .kfc-add img{
+    height: 50px;
+}
+address .add .kfc-add .phone{
+    display: flex;
+    align-items: center;
+}
+
+      /* responsive part */
+
+
+
+@media  screen and (max-width: 1330px){
+    header nav{
+        width: 80%;
+        
+    }
+    header section {
+        width: 80%;
+    }
+    .main{
+        width: 80%;
+    }
+    .card-box .card-box1{
+        width: 90%;
+    } 
+    .card-box .card-box1 .card{
+        width: 32%;
+    }
+    .card-box .card-box1 .card_b{
+        width: 48%;   
+    }    
+    .social{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .social .social2 .social-box .twitter{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .social .social2 .social-box .fackbook{
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        /* padding-bottom: 20px; */
+    }
+}
+
+@media  screen and (max-width:850px){
+
+    .app-box .app-box1  .app-content h1 {
+        font-size: 35px;
+    }
+    .social .social2 .social-box, .social-video-box {   
+        margin: 0px 20px;
+        padding: 50px 0px 20px;
+    }
+    .social .social2 .social-box .fackbook p {
+        
+        padding: 6px 10px 10px 10px;
+       
+    }
+    header section  .left-content-side h1 {
+        font-size: 40px;
+        line-height: 48px;
+        margin-top: 30px;
+    }
+    /* header section .right-food-side {
+        margin-right: 25px;
+    } */
+    header section .right-food-side img {
+        height: auto;
+        width: 500px;
+    }
+    header section  .left-content-side  button {
+        padding: 5px 20px;
+        border-radius: 25px;
+        font-size: 14px;     
+    }
+    .app-box .app-box1 {
+     
+        justify-content: space-around;
+    }.app-box .app-box1  .app-content h1 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+    address .add .kfc-add img {
+        height: 30px;
+        margin-right: 10px ;
+    }
+    address .add .kfc-add .phone p{
+        font-size: 15px;
+    }
+    address .add .kfc-icon a img { 
+        width: 29px;
+    }
+}
